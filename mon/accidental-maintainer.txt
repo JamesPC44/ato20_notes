@@ -1,0 +1,131 @@
+This is a literal copy-paste from the chat boxes; apologies for the poor formatting. If someone wants to run sed on it to make it easier to read, be my guest.
+
+Message from moderator
+Hi everyone. Thank you so much for joining us!
+Message from moderator
+At Salesforce we recently launched an Accidental Maintainer Series.  We realized that most open source project maintainers become maintainers because they solved a problem and wanted to share the solution. Rarely do maintainers anticipate the ongoing commitment and additional skills required to cultivate a healthy project and community, such as cultural competence, community management, marketing, technical writing, governance design, delegation, succession planning, and leadership.
+
+Message from moderator
+So we wanted to create a series of content where we talked to different projects and people about the topics above  and make it available to everyone.
+Message from moderator
+Josh Simmons, who is on the chat, and myself are on the Open Source Programs Office at Salesforce and we wanted to use this time to chat with all of you about being a maintainer and what resources you would like out of this series.
+Message from moderator
+Where did you struggle the first time you were a maintainer/ where do you notice other first time maintainers struggle?
+Message from moderator
+I'm also still trying to figure out this platform. It seems that you can't reply all to everyone so I might help out by sending any questions/ comments you have to the group and will include your name
+Message from moderator
+Josh Simmons: Honestly, my first time as a maintainer I accidentally abandoned my project for months because I didn't have a habit of checking the website where the project lived. WHoops!
+Message from moderator
+I'm sure this is common among first time contributors. What have you done or what you seen people do to make sure you get in the habit of checking the website?
+Question
+Erik Riedel
+it seems like the comments typed here do not appear in the Networking Lounge Chat - so we need to respond to your queries here using the Networking Lounge chat - or is the Networking Lounge something completely different ?
+Answer
+Alyssa Arvin
+I'm not sure.  I thought it would be a chat area for everyone to discuss together but looks like everything is coming directly to me.
+Message from moderator
+Ok, it looks like if I respond to your question you send over it shows your question and answer to everyone. So feel free to send over any questions or comments and I can share them.
+Message from moderator
+Had a request to share what I do with Salesforce and thank you for that reminder Eugene. I joined the Salesforce Open Source Programs Office earlier this year. I run our outreach/ marketing and internal programs.
+Message from moderator
+Would love to hear what people on the chat do at their companies? Anyone a member of an OSPO? Or maintainers of a project?
+Question
+Joshua Nelson
+I maintain a few different open source projects, the main one is https://github.com/deadlinks/cargo-deadlinks/
+Answer
+Alyssa Arvin
+Awesome. Are there any resources you need or hard lessons you have learned that you think would benefit others who maintain projects?
+Question
+Joshua Simmons
+Primarily work in an OSPO these days! Former maintainer of a few small projects.
+Answer
+Alyssa Arvin
+Nice!
+Question
+Eugene Barlaz
+Well now I at least know I am being read if not heard,  Neither in my case., I am a Global Product Director and Chronic Entrepreneur.  I have created many things and know how much work it takes, never heard the word "Maintainer" before. To me it is Create for a Purpose. Make an Impact, Help Others, Keep going and expand.
+Answer
+Alyssa Arvin
+Welcome! Maintainer is used in the open source world as someone who "manages" an open source project.
+Definitely agree with Create for a Purpose. How do you take in feedback for items that you are creating?
+Question
+Joshua Nelson
+Well I'm actually new maintainer, I just started last week haha. I started maintaining the project because I needed it for work and the old maintainer hadn't updated it in a while.
+Answer
+Alyssa Arvin
+Oh ok. So a maintainer for an existing project? We just did a series on Governance where we talked with Django, Python, and Cloudsplaining on how they viewed governance when their project first started out and how has it changed over time. Could be a good read for you to make sure you don't run into burnout maintaining the project
+Message from moderator
+Here is the link for the Governance blog: https://engineering.salesforce.com/governance-for-the-accidental-maintainer-b705b9fbfd6e
+Message from moderator
+Question for everyone: What resources are you already aware of? What resources/ individuals have already helped you as a maintainer?
+Question
+Joshua Simmons
+opensource.guide is a good starting point for a lot of subjects.
+Answer
+Alyssa Arvin
+Thank you for sharing. Definitely a good one!
+Message from moderator
+What have you found to be missing as you became a maintainer? How can we help fill that gap?
+Question
+Matt Rajkowski
+To answer your question, I struggled with keeping the project organized... this was an enterprise software platform written in Java, which suddenly was supporting 10 open source and commercial databases. Organizing includes trusting others, adapting to their needs, and communicating!
+Answer
+Alyssa Arvin
+Thank you for sharing. How did you get organized especially with adapting to people's needs and communicating? I think that could be helpful for everyone to hear!
+Question
+Joshua Nelson
+I found https://steveklabnik.com/writing/how-to-be-an-open-source-gardener from that link, which looks very helpful.
+Answer
+Alyssa Arvin
+Thank you for sharing this. I will have to check it out!
+Question
+Matt Rajkowski
+So the question is how can maintaining be organized?
+Answer
+Alyssa Arvin
+Yes, how did you stay organized?
+Question
+Joshua Simmons
+Honestly, I would've loved to have a more experienced maintainer I could ask questions of, like a lightweight mentorship kind of arrangement!
+Answer
+Alyssa Arvin
+Love this idea. Does anyone know of a program or place where this is organized?
+Question
+Joshua Nelson
+The rust compiler team has both @rust-lang/compiler and @rust-lang/compiler-contributors. The first group serves as mentors to the latter. https://forge.rust-lang.org/compiler/membership.html?highlight=compiler-contribu#compiler-team-contributors
+Answer
+Alyssa Arvin
+OH awesome! We are trying to talk to Rust about how they built an inclusive community. This sounds like something we should definitely ask them about!
+Question
+Eugene Barlaz
+Perhaps if Matt or Joshua had access to a network or group of people who are fulfilling the same role from whom to share issues and get suggestions it would help.  It certainly does for Product Managers
+Answer
+Alyssa Arvin
+Agree. That was a suggestion we received in the governance series. The person who maintains Cloudsplaining said he relied on people in slack groups to help him get started and troubleshoot.
+Question
+Joshua Nelson
+A big part of this is making it easy to contribute to the project. If people don't know how to get started, it's hard for them to make change. I've been trying to work on this for the rust project: it has 'rustc-dev-guide' which is like a crash course on how to work with and develop with the compiler. https://rustc-dev-guide.rust-lang.org/
+Answer
+Alyssa Arvin
+Thank you for sending that over. Seems like Rust is a good place to start when you are looking to get set up as a maintainer.
+Making it easy for people to contribute is a big one for building an inclusive community as well. What documentation do you think is necessary when setting up a new project?
+Question
+Joshua Nelson
+https://edunham.net/2016/09/27/rust_s_community_automation.html also looks helpful.
+Answer
+Alyssa Arvin
+Thank you for sharing this!
+Message from moderator
+What are other projects that you feel have done a great job and are an example for you as you maintain your project?
+Question
+Joshua Simmons
+I see lots of good examples among big popular projects, but it's difficult to call to mind good examples of projects run by just one or two people--and that's where I feel I most need some role models ��
+Answer
+Alyssa Arvin
+That is a great point. It can see these large projects that have technical boards set up doing a great job but what about the projects with 1 person. Maybe that is something we can dig into more. We touched on it with governance and transitioning from 1 person to a board but I think there is another topic in that as well.
+Message from moderator
+Thank you all so much for joining and for the conversation. We learned some useful things and have some items that were brought up that we will need to think about how to address and add to the series. So stay tuned!
+Message from moderator
+All of the content will be pushed out on our twitter @SalesforceEng and our blog engineering.salesforce.com.
+Message from moderator
+I hope you all have a great conference and thank you for your patience as we figured out this platform!
