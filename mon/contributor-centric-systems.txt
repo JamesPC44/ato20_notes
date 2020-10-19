@@ -1,0 +1,118 @@
+## Why build contributor-centric systems?
+
+- Growing your experience
+- May help you now or in the future if you're involved in a contributor-centric system
+- May help you find purpose in your work
+
+## Anti-patterns; or, what is the use case?
+
+- Enterprise management system
+  + Had capacity to deliver training
+  + Could have built features that focused on learner
+  + Companies were invested on training program, especially _compliance_
+  + Sometimes learning fell by the wayside
+
+- 'cure' Charity (health care provider for third-world contries)
+  + Couldn't connect money invested with people served
+  + Built a platform that let you see the people impacted (transparency)
+  + Brokered communications to build connections
+
+- Built low-resource hospital record management (https://hospitalrun.io/)
+  + cloud technology in an area where internet service was unreliable (!!)
+  + needed to keep records 300 km away from the hospital
+    - sync to central server and cloud after being offline for significant period of time
+  + 'offline enabled technology'
+  + chose ember because it was highly opinionated and required fewer decisions
+  + focused on contributors as much as the product
+
+- wanted to recruit both internally and externally
+  + offer recognition by participating
+  + want sense of openness: every page has an edit button that lets you get involved with that specific part of the site
+    - related: https://github.com/rust-lang/rfcs/pull/2985
+  + experiences
+
+- common ground between open source and non-profits
+  + pursuing a larger goal than full-time/central staff can achieve
+  + participation is not primarily based on financial benefit
+  + mission served by a broader circle (community around a cause)
+  + need relationships with contributors
+    - no only ongoing communication, but connections
+
+## What is a contributor-centric system?
+
+- Platform that lets users contribute
+  + not just working for you, but working _with_ you
+- Building projects and tooling that encourage contributors, and encourage maintainers to seek out contributors
+  + Build a broader constituency of casual contributors
+
+### Principles
+
+1. Remember who you're building the project for and why
+2. Communicate the mission clearly
+
+  - Conviction in the mission invites contribution.
+  - 'Casting the broadest net possible is unproductive.'
+  - Clarity of purpose
+
+3. Create norms
+
+  - 'People like us do things like this.'
+  - Want to know what _normative behavior_ looks like.
+    + Want a choice, but only after there's a baseline
+
+4. Contributor engagement is a primary requirement
+
+  - Direct personal connection
+  - Creates clear on-ramps for 'I want to be part of this team'
+  - 'I have something to offer'
+
+5. Make experiences personal
+
+  - Technology should _enhance_ the human connections, not replace it.
+  - Person-to-person interaction
+    + More context
+  - Shrink the gap between intention and impact
+
+6. Relationships are the incentive
+
+  - Recognition and rewards need to focus on tribal identity, not material goods
+    + Incentives get people engaged (e.g. hacktoberfest)
+    + But it's not about the t-shirt, it's about the identity (can't be purchased)
+  - Incentives get you transactions, not relationships
+
+### Questions to ask yourself
+
+1. Are we communicating an opportunity that invites engagement?
+
+  - not just admire it exists, but engage with the work
+  - how _your_ engagement can be part of the cause
+
+2. What features can you build/implement to invite contributors?
+
+  - grow body of knowledge
+  - make things part of the workflow
+
+3. How can we use tech to enhance interpersonal interaction?
+
+  - mostly the same as point 5
+
+### Q/A
+
+- Inviting participation doesn't mean _everything_ is up for debate,
+  but when adding new feature/needs design, there should be a space for
+  community input
+  + Leadership isn't crowd-sourced, but shouldn't feel threatened by input
+
+Q: Thanks Joel, love the topic! I’m curious how one might create or define “normative behaviour” in an early stage project where there are not many contributors yet. Would you recommend defining “norms” even if those norms don’t technically exist yet, or wait for the project to pick up some steam before identifying norms?
+
+A: early stages of a project has easy steps.
+  - add CoC (value people, engage with others, communicate effectively)
+  - let contributors grow with the project
+  - offer culture and values, not rules
+
+- Lead by example
+- Open feedback channels: You can always close them if you need to.
+
+## Resources
+
+- https://opensource.newrelic.com/
