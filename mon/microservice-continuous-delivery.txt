@@ -1,0 +1,76 @@
+- competing with multiple monoliths, not single monoliths
+- main goal is code-reuse across vastly different projects
+  + consolidate codebases
+  + shared libraries
+
+## Issues
+
+- 100 pipelines -> 1000+
+- Copy/paste pipelines, not reusable
+- CI/CD was the bottleneck after splitting into projects
+- Difficult to start new projects
+- 1 pipeline per project is not really feasible; neither is one maintainer per project
+  - something about devops people being different than developers? this seems specific to big companies
+
+- Microsoft, Google use monorepos
+
+## Shared libraries are not the solution
+
+- The issue is libraries rely on each other
+  + versions have to match, you get into dependency hell
+  + changes to shared libraries are difficult, you need someone to take ownership
+    - something about admins? again this seems specific to big companies
+    - have to coordinate between teams; difficult to manage
+
+## Solutions
+
+### Container-based pipelines
+
+- git-provider agnostic (think they mean gitlab vs github sort of thing)
+- each step relies on a docker container; free caching (how do they do this? had a ton of trouble with gitlab)
+  + JN: I think this is specific to codefresh
+- images do not depend on one another
+  + codefresh publishes their images publicly
+  + easy to modify
+
+### Shared pipelines
+
+- 'triggers' come with a 'context' of the repo that changes
+  + _single_ pipeline shared across many different repos
+  + changing pipeline is just changing the docker image (not sure I follow)
+- ci pipeline spawns other pull requests for cd (??)
+- triggers have their own 'filters'
+
+### Canary
+
+- testing early becomes less useful as complexity increases
+- more problems arise from _interactions_ between applications
+- canary deployments are useful
+  - JN: this seems useful for docs.rs ... we need to support running from staging.crates.io first though
+
+### Resources
+
+- https://codefresh.io/continuous-deployment/ci-cd-pipelines-microservices/
+- https://codefresh.io/events/canary-deployment-helm-istio-codefresh/
+- https://hackernoon.com/the-1-reason-jenkins-fails-fgbj4zc6 - version conflicts don't work well with Jenkins: you have to create more pipelines instead of reusing existing ones
+  + seen _thousands_ of different pipelines
+
+### Future work
+
+- Can be hard to manage thousands of runs a day: how do you keep track?
+
+### Q/A
+
+- Need to make sure there are no circular dependencies
+   + codefresh does this by keeping CI pipelines separate from infrastructure pipelines
+- codefresh runs with autoscaling in kubenetes, pipelines are fast to start and execute
+  + 'codefresh runner'
+(codefresh is a jenkins alternative)
+- Q: What would you add to Jenkins? A: 'deployment ...' (missed this bit)
+
+JN: They have _breakpoints in pipelines_, wow
+JN: Honestly this has convinced me to look into codefresh
+
+ No dependency between platforms is the main draw.
+- Local SSD makes IO extremely fast
+- follow-up talk: https://devopsdays.org/events/2021-raleigh/welcome/
