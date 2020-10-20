@@ -1,0 +1,19 @@
+## Why digitize the NYT Archives?
+
+- hard and time-consuming to navigate
+- articles are irreplacable: a week long flood can destroy decades of information
+- technology made it feasible
+
+## How do you do it?
+
+- Need to know copyright
+- scanning images
+  + scans do not come with rotation metadata
+  + horizon detection didn't work very well
+  + tried facial recognition instead
+- images come with captions - you can run image recognition on that!
+  + doesn't work well with handwriting, though
+- very difficult to clean data: long tail of missing/messy data
+  + lots of opencv and imagemagick
+  + tools had trouble distinguishing between L and 1
+- used postgres until they couldn't, then used elasticsearch
